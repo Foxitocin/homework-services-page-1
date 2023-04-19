@@ -1,0 +1,229 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+html {
+    box-sizing: border-box;
+    }
+    *, *:before, *:after {
+    box-sizing: inherit;
+    }   
+body {
+    background-color: #F8F8F8;
+    width: 768px;
+}
+
+@font-face {
+	font-family: 'TT Lakes'; 
+    font-style: normal;
+    font-weight: normal;
+	src: local('TT Lakes'),
+		url(/fonts/TTLakes-Regular.woff); 
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+
+@font-face {
+	font-family: 'TT Lakes'; 
+    font-style: normal;
+    font-weight: bold;
+	src: local('TT Lakes'),
+		url(/fonts/TTLakes-Bold.woff); 
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+
+.header {
+    background-color: white;
+    height: 87px;
+    border-bottom: 1px solid #D9FFF5;
+}
+.menu-wrapper, .icons, .tools{
+    position: relative;
+}
+.menu-wrapper__checkbox{
+    display: none;
+}
+.menu-wrapper__label{
+    display: block;
+    position: absolute;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: #FF3E79;
+    top: 24px;
+    left: 24px;
+    cursor: pointer;
+}
+
+.menu-wrapper__burger-line_first{
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    top: 36px;
+    left: 35px;
+    background-color: white;
+}
+
+.menu-wrapper__burger-line_second{
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    top: 43px;
+    left: 35px;
+    background-color: white;
+}
+.menu-wrapper__burger-line_second-rotate_top, .menu-wrapper__burger-line_second-rotate_bottom{
+    position: absolute;
+    display: none;
+    width: 22px;
+    height: 2px;
+    top: 43px;
+    left: 32px;
+    background-color: white;
+}
+
+.menu-wrapper__burger-line_third{
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    top: 50px;
+    left: 35px;
+    background-color: white;
+}
+
+.menu-wrapper__main-menu{
+    display: block;
+    position: absolute;
+    width: 320px;
+    top: 0;
+    left: 0;
+    transform: translateY(87px); /*!!! Если поставить значение 100% отталкивается от своей высоты, а не от высоты родителя*/
+    background-color: white;
+    max-height: 0; /*для стилизации появления по клику на checkbox, прячем*/
+    font-size: 0;
+    overflow: hidden; /*потомки не вылезают за рамки родителя*/
+    transition: 0.5s all;
+}
+
+.main-menu__link {
+    display: block;
+    width: 100%;
+    padding: 32px 0 0 24px;
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+.menu-wrapper__checkbox:checked ~ .menu-wrapper__main-menu{
+ max-height: 100vh;
+ font-family: 'TT Lakes';
+ font-size: 16px;
+ line-height: 24px;
+}
+.menu-wrapper__checkbox:checked ~ .menu-wrapper__burger-line_first{
+    display: none;
+}
+
+.menu-wrapper__checkbox:checked ~ .menu-wrapper__burger-line_second{
+    display: none;
+}
+
+.menu-wrapper__checkbox:checked ~ .menu-wrapper__burger-line_third{
+    display: none;
+}
+
+.menu-wrapper__checkbox:checked ~ .menu-wrapper__burger-line_second-rotate_top{
+    display: block;
+    transform: rotate(45deg);
+}
+
+.menu-wrapper__checkbox:checked ~ .menu-wrapper__burger-line_second-rotate_bottom{
+    display: block;
+    transform: rotate(-45deg);
+}
+
+.menu-wrapper__divider {
+    position: absolute;
+    width: 2px;
+    height: 32px;
+    left: 84px;
+    top: 28px;
+
+    background: #EAEAEA;
+    border-radius: 1px;
+}
+
+.menu-wrapper__logo {
+    display: block;
+    position: absolute;
+    top: 19px;
+    left: 107px;
+
+}
+
+.icons__divider {
+    position: absolute;
+    width: 2px;
+    height: 32px;
+    right: 140px;
+    top: 28px;
+
+    background: #EAEAEA;
+    border-radius: 1px;
+}
+
+.icons__link, .tools__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:#FF3E79;
+    top: 24px;
+}
+
+.icons_right-space-one {
+    position: absolute;
+    right: 274px;
+}
+
+.icons_right-space-two {
+    position: absolute;
+    top: 24px;
+    right: 218px;
+}
+
+.icons_right-space-three {
+    position: absolute;
+    top: 24px;
+    right: 162px;
+}
+
+.icons__link_img_call{
+    display: block;
+    width: 18px;
+    margin: 10px 10px;
+}
+.icons__link_img_chat, .icons__link_img_profile, .tools__link_img_tools {
+    display: block;
+    width: 20px;
+    margin: 10px 10px;
+}
+
+.tools__link_img_lens {
+    display: block;
+    width: 17px;
+    margin: 10px 10px;
+}
+
+.tools_right-space-one{
+    position: absolute;
+    top: 24px;
+    right: 80px; 
+}
+
+.tools_right-space-two{
+    position: absolute;
+    top: 24px;
+    right: 24px; 
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CPS | Услуги и сервисы</title>
+        <link rel="stylesheet" href="css/main.css">   
+    </head>
+    <body>
+        <header class="header">
+            <div class="menu-wrapper">
+                <!--Можно обойтись без связки лейбла через id, но тогда не сработает псевдокласс checked из-за вложенности-->
+                <label class="menu-wrapper__label" for="menu-checkbox"></label>
+                <input class="menu-wrapper__checkbox" type="checkbox" id="menu-checkbox">
+                <!--Burger-->
+                <div class="menu-wrapper__burger-line_first"></div>
+                <div class="menu-wrapper__burger-line_second"></div>
+                <div class="menu-wrapper__burger-line_second-rotate_top"></div>
+                <div class="menu-wrapper__burger-line_second-rotate_bottom"></div>
+                <div class="menu-wrapper__burger-line_third"></div>
+                <!--/Burger-->
+                <nav class="menu-wrapper__main-menu">
+                    <a href="#" class="main-menu__link">Ремонт техники</a>
+                    <a href="#" class="main-menu__link">Услуги и сервисы</a>
+                    <a href="#" class="main-menu__link">Корпоративным клиентам</a>
+                    <a href="#" class="main-menu__link">Продавцам техники</a>
+                    <a href="#" class="main-menu__link">Партнерам</a>
+                    <a href="#" class="main-menu__link">Производителям</a>
+                    <a href="#" class="main-menu__link">Наши сервисные центры</a>
+                    <a href="#" class="main-menu__link">Контакты</a>
+                </nav>
+                <span class="menu-wrapper__divider"></span>
+                <img src="img/logo.svg" alt="CPS Logo Company" class="menu-wrapper__logo">
+                <!--Пока не стилизовано-->
+                <!--<a class="menu-wrapper__link" href="#">
+                    <img src="/img/icon-lens.svg" alt="icon lens" class="menu-wrapper__icon_lens">
+                </a>-->
+                <!--/Пока не стилизовано-->
+            </div>
+            <div class="icons">
+                <a class="icons__link icons_right-space-one" href="#">
+                    <img src="/img/call.svg" alt="icon call" class="icons__link_img_call">
+                </a>
+                <a class="icons__link icons_right-space-two" href="#">
+                    <img src="/img/chat.svg" alt="icon chat" class="icons__link_img_chat">
+                </a>
+                <a class="icons__link icons_right-space-three" href="#">
+                    <img src="/img/profile.svg" alt="icon profile" class="icons__link_img_profile">
+                </a>
+                <span class="icons__divider"></span>
+            </div>
+            <div class="tools">
+                <a class="tools__link tools_right-space-one" href="#">
+                    <img src="/img/tools.svg" alt="icon tools" class="tools__link_img_tools">
+                </a>
+                <a class="tools__link tools_right-space-two" href="#">
+                    <img src="/img/lens.svg" alt="icon found" class="tools__link_img_lens">
+                </a>
+            </div>
+        </header>
+        <main></main>
+
+    </body>
+</html>
