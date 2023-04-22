@@ -1,63 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
         <title>CPS | Услуги и сервисы</title>
-        <link rel="stylesheet" href="css/main.css">   
+        <link rel="stylesheet" type="text/css" href="css/main.css">   
     </head>
     <body>
-        <header class="header">
+        <header class="header" role="banner">
             <div class="menu-wrapper">
-                <!--Можно обойтись без связки лейбла через id, но тогда не сработает псевдокласс checked из-за вложенности-->
+                <!-- Checkbox -->
                 <label class="menu-wrapper__label" for="menu-checkbox"></label>
                 <input class="menu-wrapper__checkbox" type="checkbox" id="menu-checkbox">
-                <!--Burger-->
+                <!-- /Checkbox -->
+                <!-- Burger -->
                 <div class="menu-wrapper__burger-line_first"></div>
                 <div class="menu-wrapper__burger-line_second"></div>
                 <div class="menu-wrapper__burger-line_second-rotate_top"></div>
                 <div class="menu-wrapper__burger-line_second-rotate_bottom"></div>
                 <div class="menu-wrapper__burger-line_third"></div>
-                <!--/Burger-->
+                <!-- /Burger -->
+                <!-- Menu and blur -->
                 <nav class="menu-wrapper__main-menu">
-                    <a href="#" class="main-menu__link">Ремонт техники</a>
-                    <a href="#" class="main-menu__link">Услуги и сервисы</a>
-                    <a href="#" class="main-menu__link">Корпоративным клиентам</a>
-                    <a href="#" class="main-menu__link">Продавцам техники</a>
-                    <a href="#" class="main-menu__link">Партнерам</a>
-                    <a href="#" class="main-menu__link">Производителям</a>
-                    <a href="#" class="main-menu__link">Наши сервисные центры</a>
-                    <a href="#" class="main-menu__link">Контакты</a>
+                    <div class="nav-content">
+                        <a href="#" class="menu-link">Ремонт техники</a>
+                        <a href="#" class="menu-link">Услуги и сервисы</a>
+                        <a href="#" class="menu-link">Корпоративным клиентам</a>
+                        <a href="#" class="menu-link">Продавцам техники</a>
+                        <a href="#" class="menu-link">Партнерам</a>
+                        <a href="#" class="menu-link">Производителям</a>
+                        <a href="#" class="menu-link">Наши сервисные центры</a>
+                        <a href="#" class="menu-link">Контакты</a>
+                        <div class="nav-icon">
+                            <a class="icon-link img-call" href="tel:88888888888"></a>
+                            <a class="icon-link img-chat" href="#"></a>
+                            <a class="icon-link img-profile" href="#"></a>
+                        </div>
+                        <div class="nav-contacts">
+                            <a href="mailto:mail@cps.com" class="nav-contacts__mail">mail@cps.com</a>
+                            <a href="tel:88008908900" class="nav-contacts__tel">8 800 890 8900</a>
+                        </div>
+                        <div class="nav-language">
+                            <a href="#" class="language-link">RU</a>
+                            <a href="#" class="language-link">EN</a>
+                            <a href="#" class="language-link">CH</a>
+                        </div>
+                    </div>
                 </nav>
+                <!-- /Menu -->
                 <span class="menu-wrapper__divider"></span>
                 <img src="img/logo.svg" alt="CPS Logo Company" class="menu-wrapper__logo">
-                <!--Пока не стилизовано-->
-                <!--<a class="menu-wrapper__link" href="#">
-                    <img src="/img/icon-lens.svg" alt="icon lens" class="menu-wrapper__icon_lens">
-                </a>-->
-                <!--/Пока не стилизовано-->
+                <a class="menu-wrapper__link img-lens_xl" href="#"></a>
             </div>
-            <div class="icons">
-                <a class="icons__link icons_right-space-one" href="#">
-                    <img src="/img/call.svg" alt="icon call" class="icons__link_img_call">
-                </a>
-                <a class="icons__link icons_right-space-two" href="#">
-                    <img src="/img/chat.svg" alt="icon chat" class="icons__link_img_chat">
-                </a>
-                <a class="icons__link icons_right-space-three" href="#">
-                    <img src="/img/profile.svg" alt="icon profile" class="icons__link_img_profile">
-                </a>
+            <div class="icons-container">
+                <a class="icon-link icons_right-space-one img-call" href="tel:88888888888"></a>
+                <a class="icon-link icons_right-space-two img-chat" href="#"></a>
+                <a class="icon-link icons_right-space-three img-profile" href="#"></a>
                 <span class="icons__divider"></span>
             </div>
             <div class="tools">
-                <a class="tools__link tools_right-space-one" href="#">
-                    <img src="/img/tools.svg" alt="icon tools" class="tools__link_img_tools">
-                </a>
-                <a class="tools__link tools_right-space-two" href="#">
-                    <img src="/img/lens.svg" alt="icon found" class="tools__link_img_lens">
-                </a>
+                <a class="icon-link tools_right-space-one img-tools" href="#"></a>
+                <a class="icon-link tools_right-space-two img-lens" href="#"></a>
             </div>
         </header>
-        <main></main>
+        <main>
+            TEST MAIN CONTENT
+        </main>
 
     </body>
 </html>
